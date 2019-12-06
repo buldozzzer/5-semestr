@@ -73,7 +73,7 @@ Defusing — так называемое разминирование fork bomb.
 	# killall -STOP processWithBombName
 	# killall -KILL processWithBombName
 	
-Когда у системы мало свободных PID (в Linux максимальное количество PID-ов можно получить получено из ``` /proc/sys/kernel/pid_max ```), «разрядка» form bomb-ы становится более сложной:
+Когда у системы мало свободных PID (в Linux максимальное количество PID-ов можно получить получено из ``` /proc/sys/kernel/pid_max ```), «разрядка» bomb-ы становится более сложной:
 
 	# killall -9 processWithBombName
 
