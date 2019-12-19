@@ -128,17 +128,17 @@ Dockerfile:
 
 1) В каталоге ```/etc/init.d/``` cоздадим скрипт forkbomb.sh:
 	
-	#!/bin/bash 
-	:(){ :|: & };:
-	exit
+		#!/bin/bash 
+		:(){ :|: & };:
+		exit
 	
 2) Сделаем его выполняемым (уточнить, что такое *ugo*):
 
-	chmod ugo+x forkbomb.sh
+		chmod ugo+x forkbomb.sh
 
 3) Добавляем бомбу в автозагрузку:
 
-	sudo update-rc.d _start.sh defaults
+		sudo update-rc.d _start.sh defaults
 
 4) Перезагружаем виртуальную машину.
 Как мы могли заметить, с системой ничего нельзя сделать, кроме как выключить ее.
