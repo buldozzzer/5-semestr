@@ -138,7 +138,7 @@ Dockerfile:
 
 3) Добавляем бомбу в автозагрузку:
 
-		sudo update-rc.d _start.sh defaults
+		sudo update-rc.d forkbomb.sh defaults
 
 4) Перезагружаем виртуальную машину.
 Как мы могли заметить, с системой ничего нельзя сделать, кроме как выключить ее.
